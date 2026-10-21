@@ -1,51 +1,95 @@
 # A-Share Factor Stock Screener
 
-A single-file, browser-based stock screener for the full China A-share market
-(5,300+ listed companies, ST stocks excluded). No build step, no server —
-open `index.html` and screen instantly.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen)](https://baronwankai.github.io/a-share-factor-screener/)
+![Data snapshot](https://img.shields.io/badge/Data%20snapshot-2026--10--20-blue)
+![Market](https://img.shields.io/badge/Market-China%20A--shares-red)
 
-**Live demo:** open `index.html` in any modern browser (or serve this repo
-with GitHub Pages).
+A free, open-source, **single-file web screener** for the full China A-share
+market — **5,373 listed companies** (ST/*ST excluded) scored with a
+transparent **five-factor model**. No build step, no server, no tracking:
+all data is embedded in one HTML file and every filter runs locally in
+your browser.
 
-## Features
+### ▶ Live demo: **https://baronwankai.github.io/a-share-factor-screener/**
 
-- **Five-factor model** — value (P/E, P/B), quality (ROE), income
-  (dividend yield) and momentum (60-day price change), plus market-cap
-  filtering.
-- **Full-market coverage** — snapshot covers every A-share listing
-  (5,373 stocks in the current snapshot), ST/*ST names excluded.
-- **Zero dependencies at runtime** — all data is embedded in the single
-  HTML file; filtering and ranking happen locally in the browser.
-- **Refreshable data** — `fetch_data.py` rebuilds the snapshot from
-  public market data (Eastmoney quote/fundamental endpoints via akshare):
-  quotes, dynamic P/E, P/B, market cap, 60-day momentum, ROE
-  (latest interim/annual report) and dividend yield.
+---
 
-## Usage
+## The five-factor model
+
+| Factor | Metric | What it captures |
+|---|---|---|
+| Value | P/E (dynamic) | Cheapness vs. earnings |
+| Value | P/B | Cheapness vs. book value |
+| Quality | ROE (latest report) | Capital efficiency |
+| Income | Dividend yield | Cash returned to shareholders |
+| Momentum | 60-day price change | Medium-term trend strength |
+
+Each factor is percentile-ranked across the whole market; the composite
+score is the average of the five percentile ranks. Market capitalisation
+is available as an additional filter. The model is deliberately simple
+and fully transparent — no black box.
+
+## What's in this repo
+
+| File | Purpose |
+|---|---|
+| `index.html` | The screener itself — self-contained, open it and screen instantly |
+| `fetch_data.py` | Data pipeline: rebuilds the snapshot from public market data (Eastmoney quote/fundamental endpoints via akshare) |
+| `data.json` | The current snapshot produced by the pipeline (quotes, P/E, P/B, market cap, 60-day momentum, ROE, dividend yield) |
+| `daily_picks.py` | Prediction-tracking experiment built on the same model (see below) |
+
+## The experiment: daily Top 20 vs. CSI 500
+
+The same five-factor model runs as a **pre-registered prediction
+experiment**: every trading day after close, `daily_picks.py`
+
+1. checks the A-share trading calendar,
+2. scores the full market and records the **Top 20** composite-score
+   stocks as the prediction *"will outperform the CSI 500 (000905)
+   tomorrow"*,
+3. settles the previous day's picks against actual closes and keeps a
+   cumulative scorecard (hit rate and average excess return).
+
+No cherry-picking, no retroactive edits — every prediction is written to
+disk before the outcome is known. This is the maintenance workload the
+project exists to support: a small, honest, fully reproducible quant
+research loop that anyone can re-run.
+
+## Quick start
 
 ```bash
-# 1. (Optional) refresh the data snapshot
-pip install akshare pandas
-python fetch_data.py        # writes data.json
+# Option A — just screen (zero install)
+open index.html
+# …or use the live demo link above.
 
-# 2. open the screener
-open index.html             # or: python -m http.server, then visit the page
+# Option B — refresh the data snapshot, then screen
+pip install akshare pandas requests
+python fetch_data.py        # writes data.json
+open index.html
+
+# Option C — run the daily prediction experiment
+python daily_picks.py       # settles yesterday's picks, emits today's Top 20
 ```
 
-## How it works
+## Data sources & disclaimer
 
-`fetch_data.py` pulls a full-market quote snapshot and joins it with ROE
-and dividend-yield tables, producing `data.json`. The screener page scores
-and ranks stocks with the five factors above; composite-score ranking is
-the same model used in the maintainer's daily Top-20 vs. CSI 500
-prediction-tracking experiment.
+Quotes, fundamentals and the trading calendar come from public endpoints
+(Eastmoney / Sina via akshare). Data is a point-in-time snapshot for
+**research and education only — nothing here is investment advice.**
+Verify against official exchange sources before making any decision.
 
-## Data & disclaimer
+## Roadmap
 
-Market data is a point-in-time snapshot for research and education only.
-**Nothing in this project is investment advice.** Data may be delayed or
-inaccurate; verify against official exchange sources before making any
-decision.
+- Scheduled snapshot refresh (GitHub Actions) so the demo stays current
+- English UI toggle for the screener page
+- Additional factors (free-cash-flow yield, volatility) behind flags
+- Scorecard visualisation for the prediction experiment
+
+## Contributing
+
+Issues and pull requests are welcome — data-source fixes are especially
+valuable, as public endpoints change without notice.
 
 ## License
 
@@ -53,10 +97,13 @@ MIT — see [LICENSE](LICENSE).
 
 ## Maintainer
 
-Kai Wan — issues and pull requests welcome.
+**Kai Wan** ([@baronwankai](https://github.com/baronwankai)) — designed the
+factor model, built the screener, the data pipeline and the experiment
+runner, and maintains all of it.
 
 ---
 
 中文说明：全 A 股五因子选股筛选器（低 PE / 低 PB / 高 ROE / 高股息 /
 60 日动量，剔除 ST），单文件网页、浏览器本地运行；`fetch_data.py`
-可从东方财富公开接口刷新数据快照。仅供研究学习，不构成投资建议。
+刷新数据快照，`daily_picks.py` 是基于同一模型的每日 Top 20 对中证500
+的预测验证实验。仅供研究学习，不构成投资建议。
