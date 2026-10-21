@@ -36,7 +36,7 @@ day, the matching human-readable report, and the cumulative scorecard.
 | 2026-10-20 | ✅ First run. Universe 3,259 rankable of 5,373. Top 20 recorded (benchmark close 6841.44, +0.60%). Scorecard empty — nothing to settle yet. |
 | 2026-10-21 | ❌ **Run failed — data source outage.** Eastmoney `clist` endpoint returned empty replies / 502 from the runner's network all afternoon; no snapshot, so no settlement of the 10-20 picks and no new picks. Per protocol §5 the day is left blank, not back-filled. Settlement of the 2026-10-20 picks will use the next successful run's closes (excess measured from the stored benchmark close to that close, and flagged as a 2-session window when reported). |
 
-## Reading the results honestly
+| 2026-10-21 (evening retry) | ✅ Retry succeeded after the data source recovered. Universe 3,256 rankable of 5,373. Benchmark close 6840.56 (-0.01%). Settled the 2026-10-20 picks over the single session 10-20 → 10-21: 3 wins / 17 losses, average excess -0.9%. Top 20 for 2026-10-21 recorded. Scorecard: 20 settled, win rate 15.0%, average excess -0.9%. |
 
 - One day proves nothing; the scorecard only becomes interesting after
   dozens of settled days. The maintainer's prior is that the factor mix
@@ -45,3 +45,10 @@ day, the matching human-readable report, and the cumulative scorecard.
   model working as specified, not a bug.
 - Win rate and average excess are reported together: a >50% win rate
   with negative average excess would still be a losing signal.
+
+## Milestone: first 10 picks settled (2026-10-21)
+
+After the evening retry, `experiment/scorecard.json` crossed its first
+milestone band (10 settled): 20 picks settled from 1 settled trading day
+(2026-10-20), win rate 15.0%, average excess -0.9%. One batch proves
+nothing — this is recorded as the baseline, not a verdict.
