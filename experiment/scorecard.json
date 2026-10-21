@@ -1,0 +1,12 @@
+{
+ "updated_at": "2026-10-20 08:43:41",
+ "benchmark": "中证500(000905)",
+ "total_settled": 0,
+ "win": 0,
+ "loss": 0,
+ "flat": 0,
+ "win_rate": null,
+ "avg_excess_pct": null,
+ "best3": [],
+ "worst3": []
+}
