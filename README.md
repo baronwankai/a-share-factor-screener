@@ -37,7 +37,10 @@ and fully transparent — no black box.
 | `index.html` | The screener itself — self-contained, open it and screen instantly |
 | `fetch_data.py` | Data pipeline: rebuilds the snapshot from public market data (Eastmoney quote/fundamental endpoints via akshare) |
 | `data.json` | The current snapshot produced by the pipeline (quotes, P/E, P/B, market cap, 60-day momentum, ROE, dividend yield) |
+| `snapshot_stats.py` | Zero-dependency checker: factor coverage + recomputed Top 20 for any snapshot (its rankable count, 3,259, reproduces the experiment's recorded universe exactly) |
 | `daily_picks.py` | Prediction-tracking experiment built on the same model (see below) |
+| `experiment/` | The experiment's raw records — daily picks, reports and the cumulative scorecard, committed as generated |
+| `docs/` | [`METHODOLOGY.md`](docs/METHODOLOGY.md) (factor spec) and [`EXPERIMENT.md`](docs/EXPERIMENT.md) (pre-registered protocol and run log, failures included) |
 
 ## The experiment: daily Top 20 vs. CSI 500
 

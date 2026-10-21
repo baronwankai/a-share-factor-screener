@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.1.0 — 2026-10-21
+
+Substance release: documentation and evidence trail.
+
+- `docs/METHODOLOGY.md` — full factor specification: universe
+  construction, percentile scoring, `data.json` schema, limitations.
+- `docs/EXPERIMENT.md` — pre-registered experiment protocol and run log,
+  including the 2026-10-21 data-source outage (failed runs are logged,
+  never back-filled).
+- `experiment/` — raw records committed as generated: first prediction
+  file (2026-10-20 Top 20), first daily report, cumulative scorecard.
+- `snapshot_stats.py` — zero-dependency snapshot checker; reproduces the
+  experiment's rankable universe (3,259) from the shipped snapshot.
+- `CONTRIBUTING.md`, `requirements.txt`.
+
 ## v1.0.0 — 2026-10-21
 
 Initial public release.
