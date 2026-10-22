@@ -37,6 +37,7 @@ day, the matching human-readable report, and the cumulative scorecard.
 | 2026-10-21 | ❌ **Run failed — data source outage.** Eastmoney `clist` endpoint returned empty replies / 502 from the runner's network all afternoon; no snapshot, so no settlement of the 10-20 picks and no new picks. Per protocol §5 the day is left blank, not back-filled. Settlement of the 2026-10-20 picks will use the next successful run's closes (excess measured from the stored benchmark close to that close, and flagged as a 2-session window when reported). |
 
 | 2026-10-21 (evening retry) | ✅ Retry succeeded after the data source recovered. Universe 3,256 rankable of 5,373. Benchmark close 6840.56 (-0.01%). Settled the 2026-10-20 picks over the single session 10-20 → 10-21: 3 wins / 17 losses, average excess -0.9%. Top 20 for 2026-10-21 recorded. Scorecard: 20 settled, win rate 15.0%, average excess -0.9%. |
+| 2026-10-22 | ✅ Ran normally. Universe 3,257 rankable of 5,373. Benchmark close 6655.25 (-2.71%). Settled the 2026-10-21 picks: 17 wins / 3 losses, average excess +0.92% — the low-P/E bank-heavy basket held up far better than the index on a down day. Top 20 for 2026-10-22 recorded. Scorecard: 40 settled, win rate 50.0%, average excess +0.01%. |
 
 - One day proves nothing; the scorecard only becomes interesting after
   dozens of settled days. The maintainer's prior is that the factor mix
@@ -52,3 +53,12 @@ After the evening retry, `experiment/scorecard.json` crossed its first
 milestone band (10 settled): 20 picks settled from 1 settled trading day
 (2026-10-20), win rate 15.0%, average excess -0.9%. One batch proves
 nothing — this is recorded as the baseline, not a verdict.
+
+## Milestone: first 30 picks settled (2026-10-22)
+
+`experiment/scorecard.json` crossed the 30-settled band on the 2026-10-22
+run: 40 picks settled from 2 settled trading days (2026-10-20,
+2026-10-21), win rate 50.0%, average excess +0.01%. The two batches are
+mirror images — the first lost -0.9% on average, the second gained +0.92%
+on a day the index fell 2.71% — so the scorecard sits almost exactly at
+coin-flip. The experiment is still far too young for any conclusion.

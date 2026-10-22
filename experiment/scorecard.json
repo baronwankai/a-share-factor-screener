@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-10-21 11:49:01",
+ "updated_at": "2026-10-22 08:49:38",
  "benchmark": "中证500(000905)",
- "total_settled": 20,
- "win": 3,
- "loss": 17,
+ "total_settled": 40,
+ "win": 20,
+ "loss": 20,
  "flat": 0,
- "win_rate": 15.0,
- "avg_excess_pct": -0.9,
+ "win_rate": 50.0,
+ "avg_excess_pct": 0.01,
  "best3": [
   {
-   "date": "2026-10-20",
-   "code": "600018",
-   "name": "上港集团",
-   "excess_pct": 0.75,
+   "date": "2026-10-21",
+   "code": "600919",
+   "name": "江苏银行",
+   "excess_pct": 2.79,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-20",
-   "code": "000498",
-   "name": "山东路桥",
-   "excess_pct": 0.33,
+   "date": "2026-10-21",
+   "code": "002966",
+   "name": "苏州银行",
+   "excess_pct": 2.38,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-20",
-   "code": "002948",
-   "name": "青岛银行",
-   "excess_pct": 0.01,
+   "date": "2026-10-21",
+   "code": "000001",
+   "name": "平安银行",
+   "excess_pct": 1.74,
    "result": "跑赢"
   }
  ],
@@ -46,10 +46,10 @@
    "result": "跑输"
   },
   {
-   "date": "2026-10-20",
-   "code": "601083",
-   "name": "锦江航运",
-   "excess_pct": -1.54,
+   "date": "2026-10-21",
+   "code": "002479",
+   "name": "富春环保",
+   "excess_pct": -1.91,
    "result": "跑输"
   }
  ]
