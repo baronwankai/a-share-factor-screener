@@ -38,6 +38,7 @@ day, the matching human-readable report, and the cumulative scorecard.
 
 | 2026-10-21 (evening retry) | ✅ Retry succeeded after the data source recovered. Universe 3,256 rankable of 5,373. Benchmark close 6840.56 (-0.01%). Settled the 2026-10-20 picks over the single session 10-20 → 10-21: 3 wins / 17 losses, average excess -0.9%. Top 20 for 2026-10-21 recorded. Scorecard: 20 settled, win rate 15.0%, average excess -0.9%. |
 | 2026-10-22 | ✅ Ran normally. Universe 3,257 rankable of 5,373. Benchmark close 6655.25 (-2.71%). Settled the 2026-10-21 picks: 17 wins / 3 losses, average excess +0.92% — the low-P/E bank-heavy basket held up far better than the index on a down day. Top 20 for 2026-10-22 recorded. Scorecard: 40 settled, win rate 50.0%, average excess +0.01%. |
+| 2026-10-23 | ✅ Ran normally. Universe 3,256 rankable of 5,373. Benchmark close 6814.44 (+2.39%). Settled the 2026-10-22 picks: 1 win / 19 losses, average excess -2.89% — the bank-heavy basket lagged badly on a day the index rallied 2.39%. Top 20 for 2026-10-23 recorded. Scorecard: 60 settled, win rate 35.0%, average excess -0.96%. |
 
 - One day proves nothing; the scorecard only becomes interesting after
   dozens of settled days. The maintainer's prior is that the factor mix
@@ -62,3 +63,14 @@ run: 40 picks settled from 2 settled trading days (2026-10-20,
 mirror images — the first lost -0.9% on average, the second gained +0.92%
 on a day the index fell 2.71% — so the scorecard sits almost exactly at
 coin-flip. The experiment is still far too young for any conclusion.
+
+## Milestone: first 60 picks settled (2026-10-23)
+
+`experiment/scorecard.json` crossed the 60-settled band on the 2026-10-23
+run: 60 picks settled from 3 settled trading days (2026-10-20, 2026-10-21,
+2026-10-22), win rate 35.0%, average excess -0.96%. The third batch was the
+worst so far — 1 win / 19 losses, average excess -2.89% on a day the index
+rose 2.39% — and it dragged the scorecard well below coin-flip. Three
+batches is still a tiny sample, but the bank-heavy value tilt now shows a
+clear pattern: it cushions down days and lags rallies, exactly the
+low-beta behavior the factor mix predicts.
