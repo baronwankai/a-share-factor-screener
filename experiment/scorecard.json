@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-10-23 08:47:38",
+ "updated_at": "2026-10-26 08:47:19",
  "benchmark": "中证500(000905)",
- "total_settled": 60,
- "win": 21,
+ "total_settled": 80,
+ "win": 41,
  "loss": 39,
  "flat": 0,
- "win_rate": 35.0,
- "avg_excess_pct": -0.96,
+ "win_rate": 51.2,
+ "avg_excess_pct": -0.05,
  "best3": [
   {
-   "date": "2026-10-21",
-   "code": "600919",
-   "name": "江苏银行",
-   "excess_pct": 2.79,
+   "date": "2026-10-23",
+   "code": "601156",
+   "name": "东航物流",
+   "excess_pct": 5.02,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-21",
-   "code": "002966",
-   "name": "苏州银行",
-   "excess_pct": 2.38,
+   "date": "2026-10-23",
+   "code": "600064",
+   "name": "南京高科",
+   "excess_pct": 3.96,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-21",
-   "code": "000001",
-   "name": "平安银行",
-   "excess_pct": 1.74,
+   "date": "2026-10-23",
+   "code": "601998",
+   "name": "中信银行",
+   "excess_pct": 3.42,
    "result": "跑赢"
   }
  ],
