@@ -1,32 +1,32 @@
 {
- "updated_at": "2026-10-28 08:48:51",
+ "updated_at": "2026-10-29 08:47:04",
  "benchmark": "中证500(000905)",
- "total_settled": 120,
- "win": 59,
- "loss": 61,
+ "total_settled": 140,
+ "win": 78,
+ "loss": 62,
  "flat": 0,
- "win_rate": 49.2,
- "avg_excess_pct": 0.07,
+ "win_rate": 55.7,
+ "avg_excess_pct": 0.69,
  "best3": [
   {
-   "date": "2026-10-26",
-   "code": "601825",
-   "name": "沪农商行",
-   "excess_pct": 7.22,
+   "date": "2026-10-28",
+   "code": "002948",
+   "name": "青岛银行",
+   "excess_pct": 10.84,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-26",
+   "date": "2026-10-28",
    "code": "601838",
    "name": "成都银行",
-   "excess_pct": 5.52,
+   "excess_pct": 8.9,
    "result": "跑赢"
   },
   {
-   "date": "2026-10-26",
-   "code": "601169",
-   "name": "北京银行",
-   "excess_pct": 5.37,
+   "date": "2026-10-28",
+   "code": "601528",
+   "name": "瑞丰银行",
+   "excess_pct": 7.26,
    "result": "跑赢"
   }
  ],
