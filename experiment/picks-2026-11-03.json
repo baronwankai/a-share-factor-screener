@@ -15,7 +15,15 @@
    "pb": 0.9,
    "roe": 7.49,
    "div": 4.85,
-   "mom60": 10.29
+   "mom60": 10.29,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 19.77,
+    "ret_pct": -0.3,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.96,
+    "result": "跑输"
+   }
   },
   {
    "code": "002582",
@@ -26,7 +34,15 @@
    "pb": 0.9,
    "roe": 17.19,
    "div": 5.37,
-   "mom60": -1.4
+   "mom60": -1.4,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 10.0,
+    "ret_pct": 1.21,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -3.45,
+    "result": "跑输"
+   }
   },
   {
    "code": "601169",
@@ -37,7 +53,15 @@
    "pb": 0.43,
    "roe": 5.3,
    "div": 5.44,
-   "mom60": 12.05
+   "mom60": 12.05,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 5.85,
+    "ret_pct": -0.17,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.83,
+    "result": "跑输"
+   }
   },
   {
    "code": "002948",
@@ -48,7 +72,15 @@
    "pb": 0.79,
    "roe": 8.49,
    "div": 3.16,
-   "mom60": 2.71
+   "mom60": 2.71,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 6.12,
+    "ret_pct": 0.99,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -3.67,
+    "result": "跑输"
+   }
   },
   {
    "code": "000672",
@@ -59,7 +91,15 @@
    "pb": 1.09,
    "roe": 14.11,
    "div": 2.67,
-   "mom60": 3.62
+   "mom60": 3.62,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 13.71,
+    "ret_pct": 4.18,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -0.48,
+    "result": "跑输"
+   }
   },
   {
    "code": "601601",
@@ -70,7 +110,15 @@
    "pb": 0.95,
    "roe": 9.7,
    "div": 3.71,
-   "mom60": -0.95
+   "mom60": -0.95,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 31.67,
+    "ret_pct": -1.8,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -6.46,
+    "result": "跑输"
+   }
   },
   {
    "code": "600919",
@@ -81,7 +129,15 @@
    "pb": 0.82,
    "roe": 7.86,
    "div": 2.05,
-   "mom60": 7.78
+   "mom60": 7.78,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 12.55,
+    "ret_pct": -0.4,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -5.06,
+    "result": "跑输"
+   }
   },
   {
    "code": "002142",
@@ -92,7 +148,15 @@
    "pb": 0.92,
    "roe": 7.12,
    "div": 2.77,
-   "mom60": 5.48
+   "mom60": 5.48,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 33.88,
+    "ret_pct": -0.53,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -5.19,
+    "result": "跑输"
+   }
   },
   {
    "code": "601318",
@@ -103,7 +167,15 @@
    "pb": 0.95,
    "roe": 9.0,
    "div": 3.24,
-   "mom60": 0.04
+   "mom60": 0.04,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 54.01,
+    "ret_pct": -1.06,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -5.72,
+    "result": "跑输"
+   }
   },
   {
    "code": "600020",
@@ -114,7 +186,15 @@
    "pb": 0.79,
    "roe": 5.4,
    "div": 3.19,
-   "mom60": 9.87
+   "mom60": 9.87,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 4.25,
+    "ret_pct": -2.07,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -6.74,
+    "result": "跑输"
+   }
   },
   {
    "code": "600035",
@@ -125,7 +205,15 @@
    "pb": 0.67,
    "roe": 4.81,
    "div": 4.42,
-   "mom60": 7.54
+   "mom60": 7.54,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 3.84,
+    "ret_pct": -0.26,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.92,
+    "result": "跑输"
+   }
   },
   {
    "code": "601577",
@@ -136,7 +224,15 @@
    "pb": 0.51,
    "roe": 6.17,
    "div": 2.46,
-   "mom60": 3.9
+   "mom60": 3.9,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 9.88,
+    "ret_pct": 0.2,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.46,
+    "result": "跑输"
+   }
   },
   {
    "code": "600036",
@@ -147,7 +243,15 @@
    "pb": 0.91,
    "roe": 6.71,
    "div": 2.67,
-   "mom60": 5.77
+   "mom60": 5.77,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 42.54,
+    "ret_pct": -0.35,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -5.01,
+    "result": "跑输"
+   }
   },
   {
    "code": "600018",
@@ -158,7 +262,15 @@
    "pb": 0.89,
    "roe": 5.87,
    "div": 2.76,
-   "mom60": 8.78
+   "mom60": 8.78,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 5.68,
+    "ret_pct": -0.35,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -5.01,
+    "result": "跑输"
+   }
   },
   {
    "code": "000001",
@@ -169,7 +281,15 @@
    "pb": 0.48,
    "roe": 5.22,
    "div": 3.19,
-   "mom60": 3.52
+   "mom60": 3.52,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 11.74,
+    "ret_pct": -0.25,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.92,
+    "result": "跑输"
+   }
   },
   {
    "code": "601919",
@@ -180,7 +300,15 @@
    "pb": 1.15,
    "roe": 5.7,
    "div": 3.18,
-   "mom60": 16.48
+   "mom60": 16.48,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 17.93,
+    "ret_pct": 0.67,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -3.99,
+    "result": "跑输"
+   }
   },
   {
    "code": "600926",
@@ -191,7 +319,15 @@
    "pb": 0.85,
    "roe": 8.87,
    "div": 1.67,
-   "mom60": 5.39
+   "mom60": 5.39,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 16.85,
+    "ret_pct": 0.24,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.42,
+    "result": "跑输"
+   }
   },
   {
    "code": "603889",
@@ -202,7 +338,15 @@
    "pb": 1.6,
    "roe": 8.53,
    "div": 4.5,
-   "mom60": 14.06
+   "mom60": 14.06,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 6.39,
+    "ret_pct": -2.74,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -7.4,
+    "result": "跑输"
+   }
   },
   {
    "code": "603323",
@@ -213,7 +357,15 @@
    "pb": 0.49,
    "roe": 6.23,
    "div": 2.5,
-   "mom60": 0.91
+   "mom60": 0.91,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 4.47,
+    "ret_pct": 0.9,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -3.76,
+    "result": "跑输"
+   }
   },
   {
    "code": "002966",
@@ -224,8 +376,30 @@
    "pb": 0.79,
    "roe": 6.12,
    "div": 1.95,
-   "mom60": 12.44
+   "mom60": 12.44,
+   "settle": {
+    "settle_date": "2026-11-04",
+    "close": 9.57,
+    "ret_pct": -0.1,
+    "bench_ret_pct": 4.66,
+    "excess_pct": -4.77,
+    "result": "跑输"
+   }
   }
  ],
- "settled": false
+ "settled": true,
+ "settled_on": "2026-11-04",
+ "settlement": {
+  "bench_close_then": 6327.05,
+  "bench_close_now": 6622.03,
+  "bench_ret_pct": 4.66,
+  "count": 20,
+  "with_data": 20,
+  "win": 0,
+  "loss": 20,
+  "flat": 0,
+  "no_data": 0,
+  "win_rate": 0.0,
+  "avg_excess_pct": -4.76
+ }
 }
