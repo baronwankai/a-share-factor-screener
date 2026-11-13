@@ -53,6 +53,7 @@ day, the matching human-readable report, and the cumulative scorecard.
 | 2026-11-10 | ✅ Ran normally. Universe 3,236 rankable. Benchmark close 6645.89 (+0.91%). Settled the 2026-11-09 picks: 1 win / 19 losses, average excess -1.0% — the bank-heavy basket lagged on a day the index rose 0.91%. Top 20 for 2026-11-10 recorded. Scorecard: 300 settled, win rate 52.0%, average excess +0.14%. |
 | 2026-11-11 | ✅ Ran normally. Universe 3,236 rankable. Benchmark close 6713.18 (+1.01%). Settled the 2026-11-10 picks: 0 wins / 20 losses, average excess -1.38% — the bank-heavy basket lagged on a day the index rose 1.01%. Top 20 for 2026-11-11 recorded. Scorecard: 320 settled, win rate 48.8%, average excess +0.05%. |
 | 2026-11-12 | ✅ Ran normally. Universe 3,236 rankable. Benchmark close 6604.15 (-1.62%). Settled the 2026-11-11 picks: 19 wins / 1 loss, average excess +1.31% — the bank-heavy basket cushioned a down day. Top 20 for 2026-11-12 recorded. Scorecard: 340 settled, win rate 51.5%, average excess +0.12%. |
+| 2026-11-13 | ✅ Ran normally. Universe 3,236 rankable. Benchmark close 6465.49 (-2.10%). Settled the 2026-11-12 picks: 20 wins / 0 losses, average excess +3.51% — the bank-heavy basket held up far better than the index on a down day. Top 20 for 2026-11-13 recorded. Scorecard: 360 settled, win rate 54.2%, average excess +0.31%. |
 
 - One day proves nothing; the scorecard only becomes interesting after
   dozens of settled days. The maintainer's prior is that the factor mix
