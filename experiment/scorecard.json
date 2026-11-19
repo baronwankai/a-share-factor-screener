@@ -1,12 +1,12 @@
 {
- "updated_at": "2026-11-18 08:47:40",
+ "updated_at": "2026-11-19 08:48:06",
  "benchmark": "中证500(000905)",
- "total_settled": 420,
- "win": 235,
- "loss": 185,
+ "total_settled": 440,
+ "win": 243,
+ "loss": 197,
  "flat": 0,
- "win_rate": 56.0,
- "avg_excess_pct": 0.48,
+ "win_rate": 55.2,
+ "avg_excess_pct": 0.44,
  "best3": [
   {
    "date": "2026-10-28",
